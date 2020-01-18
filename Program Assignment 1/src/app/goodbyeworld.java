@@ -1,6 +1,9 @@
+package app;
+
 public class GoodbyeWorld {
 
-    public void Salutation(){
-    System.out.println("Goodbye, World!");
+    public static void printSalutation()
+    {
+        System.out.println("Goodbye, World!");
     }
 }

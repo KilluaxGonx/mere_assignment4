@@ -1,6 +1,9 @@
-public static class HelloWorld {
+package app;
 
-    public void Greeting(){
+public class HelloWorld {
+
+    public static void printGreeting()
+    {
         System.out.println("Hello, World!");
     }
 }
