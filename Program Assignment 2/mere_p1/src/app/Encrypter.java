@@ -1,3 +1,21 @@
+/** Psudocode: Tips: Use stringName.charAt(int k) instead of stringName[int k]
+ *             Tip2: Use stringName.lenght() instead of strlen(stringName), if necc;
+ * Public class Encrypter {
+ *  String cyphertext;
+ *  Public String encrypt(String userString){
+ *      For (I = 0; I < 4 ; i++){
+ *      (Convert to int(userString[i])) + 7 mod 10
+ *      Cast to string, store into cypherText[i]
+}
+ * Ex. 8901
+ *      For (I = 0; i < 2; i++){
+ *      char Temp = cypherText[i] = 8 = 9
+ *      cypherText[i] = cypherText[i+2] => 0901 => 0101
+ *      cypherText[i+2] = Temp => 0981 => 0109
+ *  return cyphertext;
+ *  }
+ * }
+*/
 package app;
 
 public class Encrypter {

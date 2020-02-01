@@ -1,3 +1,7 @@
+/** Author: Recleph Mere
+ *  Date: 02/1/2020
+ *  Description: This program encrypts and decrypts 4 digit integers using a specific algorithm.
+*/
 package app;
 import java.util.Scanner;
 

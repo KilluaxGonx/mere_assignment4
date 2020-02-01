@@ -1,3 +1,18 @@
+/** Pseudocode:
+ * Public class Decrypter {
+ *  String userMessage;
+ *  Public String decrypt(String cypherText){
+ *     For (I = 0; I < 2; i++){ <Reverse the string first>
+ *          char Temp = userMessage[i] 
+ *          userMessage[i] = userMessage[i+2] 
+ *          userMessage[i+2] = Temp 
+ *      For (i =  0; i < 4; i++) {
+ *          (Convert to int(cypherText[i]) - 7) mod 10
+ *          Cast to string, store into userMessage[i]
+ *     return userMessage;
+ *  }
+ * }
+ */
 package app;
 
 public class Decrypter {
