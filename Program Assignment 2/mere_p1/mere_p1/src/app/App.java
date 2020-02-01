@@ -3,15 +3,25 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        // Get user input
+        int[] cypherArray;
+        int i;
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your 4 digit integer: ");
-        String userString = input.next();
+        while (true){
+            System.out.print("\nEnter a four digit integer: ");
+            String userString = input.nextLine();
 
-        //Encrypt user input
+            Encrypter cypherText = new Encrypter();
+            cypherArray = cypherText.encrypt(userString);
 
-        //Decrypt user input
-
-
+            if (cypherArray[0] < 0){
+                System.out.println("Invalid input.");
+            }
+            else {
+                for (i = 0; i < 4; i++){
+                    System.out.print(cypherArray[i]);
+                }
+            }
+        }
     }
 }
