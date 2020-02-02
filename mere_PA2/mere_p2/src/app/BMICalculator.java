@@ -1,3 +1,45 @@
+/** Author: Recleph Mere
+ *  Date: 02/01/2020
+ *  Description: This program calculate the of a user given specific unit types.
+ * Pseudocode: 
+ * Public class BMICalculator {
+ *      double weight;
+ *      double height;
+ *      double BMI;
+ *      String BMICategory;
+ * 
+ *      //Create a constructor:
+ * 	    Public BMICalculator(){
+ * 	        This.weight = 0.0
+ *          This.height = 0.0;
+ *          This.Double BMI = 0.0
+ *          This.BMICategory = “Underweight”
+ *      }
+ *      Public void readUserData(){
+ *          Prompt user for which method they’d like to calculate their BMI (1 or 2);
+ *          Get userWeight => Store in this.weight;
+ *          Get user Height => Store in this.height;
+ *      }
+ *      Public void calculateBMI(){
+ * 	        If (userUnitChoice == 1){
+ * 	            Calculate BMI using (703*weight)/(height)^(2);
+ *          }
+ * 	        Else if (userUnitChoice == 2){
+ * 	            Calculate BMI using weight/(height)^(2);
+ *          }
+ *          If BMI <18.5; BMICategory = “Underweight”
+ *          Else If BMI 18.5–24.9; BMICategory = “Normal weight”
+ *          Else If BMI 25–29.9; BMICategory = “Overweight”
+ *          Else BMICategory = Obese
+ *      }
+ *      Public void displayBMI(){
+ *          Display Height: userHeight
+ *          Display Weight: userWidth
+ *          Display BMI: userBMI;
+ *          Display BMI Category: BMICategory;
+ *      }
+ * } 
+ */
 package app;
 import java.util.Scanner;
 public class BMICalculator {
