@@ -1,0 +1,3 @@
+The Security Manager is a single Java object that performs runtime checks on dangerous methods. 
+Code in the Java library consults the Security Manager whenever a potentially dangerous operation is attempted. 
+The Security Manager can veto the operation by generating a SecurityException.
