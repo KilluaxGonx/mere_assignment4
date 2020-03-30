@@ -1,4 +1,5 @@
 package app;
+
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,7 +17,8 @@ public class DuplicateRemover {
             }
         }
         catch (IOException e) {
-            System.out.println("Could not open file.");
+            System.out.println("Could Not Open File. File May Not Exist.");
+            System.exit(-1);
         }
     }
     public void write(String outputFile){
@@ -27,9 +29,11 @@ public class DuplicateRemover {
         }
         catch (FileNotFoundException e){
             System.out.println("File Not Found.");
+            System.exit(-2);
         }
         catch (SecurityException e){
             System.out.println("You do not have permission to write to this file.");
+            System.exit(0);
         }
     }
 }
